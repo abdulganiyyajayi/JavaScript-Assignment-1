@@ -1,0 +1,1 @@
+This is the solution to JavaScript assignment on Object-Oriented Programming
