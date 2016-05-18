@@ -1,3 +1,6 @@
 function NotesApplication(author){
 	this.author=author;
-	this.note = [];
+	this.notes = [];
+	this.create = function(note_content){
+		this.notes.push(note_content);
+	}
