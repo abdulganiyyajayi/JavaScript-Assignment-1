@@ -29,3 +29,10 @@ function NotesApplication(author){
 			}
 		}
 	}
+
+	this.delete = function(note_id){
+		if(!(note_id.isNaN)){
+			this.notes.splice(note_id, 1);
+			return true;
+		}
+	}
