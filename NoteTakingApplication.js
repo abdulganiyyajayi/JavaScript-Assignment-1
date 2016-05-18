@@ -36,3 +36,14 @@ function NotesApplication(author){
 			return true;
 		}
 	}
+
+	this.edit = function(note_id, new_content){
+		if(!(note_id.isNaN)){
+			if(new_content != ''){
+				this.notes[note_id]=new_content;
+				return true;
+			}
+		}
+	}
+
+}
