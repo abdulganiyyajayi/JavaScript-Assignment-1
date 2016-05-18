@@ -12,3 +12,9 @@ function NotesApplication(author){
 			return(string);
 		}
 	}
+	
+	this.getNote = function(note_id){
+		var strings;
+		strings = this.notes[note_id];
+		return strings;
+	}
