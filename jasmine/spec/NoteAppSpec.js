@@ -6,6 +6,10 @@ describe('Each method should return the right data: ', function() {
       noteApp = new NotesApplication('Ajayi'); 
   });
 
+  it('create method should only add to the content', function(){
+    expect(noteApp.create()).toBeUndefined();
+  });
+
   it('listNote should return a string', function() {
     // noteApp.getNote.();
     // noteApp.notes = ["eyteafdhae faeygf ieda", "sjflgusfdk sfd"];
@@ -23,7 +27,6 @@ describe('Each method should return the right data: ', function() {
   //   noteApp.notes[0] = "content1";
   //   expect(typeof(noteApp.search())).toBe(typeof("string"));
   // });
-
 
   it("edit must return true as the value", function() {
     expect(noteApp.edit(0,"Welcome")).toBe(true);
