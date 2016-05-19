@@ -1,3 +1,17 @@
+describe('Attributes created should be valid: ', function() {
+
+  beforeEach(function() {
+    // var noteApp;
+      noteApp = new NotesApplication('Ajayi'); 
+  });
+
+  it ('notes should be an array', function() {
+    expect(noteApp.notes).toEqual(Array());
+  });
+
+});
+
+
 describe('Each method should return the right data: ', function() {
   
 
@@ -33,16 +47,3 @@ describe('Each method should return the right data: ', function() {
   });
 });
 
-
-describe('Attributes created should be valid: ', function() {
-
-  beforeEach(function() {
-    // var noteApp;
-      noteApp = new NotesApplication('Ajayi'); 
-  });
-
-  it ('notes should be an array', function() {
-    expect(noteApp.notes).toEqual(Array());
-  });
-
-});
