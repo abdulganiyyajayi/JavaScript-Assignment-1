@@ -29,3 +29,17 @@ describe('Each method should return the right data: ', function() {
     expect(noteApp.edit(0,"Welcome")).toBe(true);
   });
 });
+
+
+describe('Attributes created should be valid: ', function() {
+
+  beforeEach(function() {
+    // var noteApp;
+      noteApp = new NotesApplication('Ajayi'); 
+  });
+
+  it ('notes should be an array', function() {
+    expect(noteApp.notes).toEqual(Array());
+  });
+
+});
